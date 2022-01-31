@@ -1,0 +1,367 @@
+/* mobile*/
+@media(max-width :767px){
+    
+}
+/* small screen*/
+@media(min-width :768px){
+    .container {
+        width: 750px;
+    }
+}
+/* meduem screen*/
+@media(min-width :992px){
+    .container {
+        width: 970px;
+    }
+}
+/* larg screen*/
+@media(min-width :1200px){
+
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:"Work Sans", sans-serif;
+ 
+}
+.page{
+   
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 70px  auto 70px ;
+    grid-template-areas: 
+     "logo logo . . . . . . nav  nav"
+     "cont cont cont cont cont cont cont cont cont cont "
+     "foot foot foot foot foot foot foot foot foot foot ";
+}
+ul{
+    list-style-type: none;
+}
+ul a{
+    list-style-type: none;
+    
+}
+ul li{
+    display:inline-block ;
+}
+.header{
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.logo img{
+    grid-area: logo;
+    position: absolute;
+    left: 8%;
+    top: 3.5%;
+    height: 25px;
+    width: 55px;
+}
+ .menu-btn{ 
+    grid-area: nav;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:80px;
+    height: 80px;
+    transition: all .5s ease-in;
+   
+}
+.menu-btn_burger{
+    grid-area: nav; 
+    direction: rtl; 
+    width: 30px;
+    height: 2px;
+    background-color: rgb(116, 112, 112);
+    transition: all .3s ease-in;
+}
+.menu-btn_burger::before ,.menu-btn_burger::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(116, 112, 112);
+    transition: all .3s ease-in;
+}
+.menu-btn_burger::before{
+    transform: translateY(-16px);
+}
+.menu-btn_burger::after{
+    transform: translateY(16px);
+}
+.link{
+    display: none;
+}
+nav {
+    grid-area: nav;
+  
+}
+.menu-btn :hover{
+    width: 40px;
+    
+}
+
+section {
+    grid-area: cont;
+    background-color:rgb(28, 128, 69) ;
+    color: white;
+}
+aside{
+    grid-area: side;
+    color: white;
+    background-color: yellow;
+}
+footer{
+    grid-area: foot;
+   background-color: blue;
+    color: white;
+}
+
+section .services {
+    padding: 10px;
+    width:415px;
+    display: grid;
+    justify-content:space-between;
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color:#777;
+    line-height: 1.6;
+}
+
+section img.fr {
+    
+    background-size:contain;
+    background-repeat: repeat;
+}
+ .frist{
+   
+    background-image: url(images/landing.jpg);
+    background-size: cover;
+  
+}
+ section.frist img{
+    max-width: 100%;
+}
+section .pragra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color:#eee;
+    padding: 10px;
+    height: 600px;
+}
+h1{
+    font-size: 800;
+    font-weight:bold;
+    color: #10cab7 ;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+ .frist p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+section .pargr div{
+    
+    background-color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:#777;
+    line-height: 1.6;
+    width:350px ;
+    
+}
+div .pr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eee;
+    margin-bottom: 5px;
+    color:#777;
+    line-height: 1.8;
+    width:400px ;
+    padding: 20px;
+    text-align:center;
+    margin-left: 30px;
+    
+    
+}
+div .pr p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eee;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color:#777;
+    line-height: 1.8;
+    width:350px ;
+    padding: 20px;
+    text-align: center;
+}
+section  .pr div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    background-color:#eee;
+    padding: 10px;
+}
+
+section .parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color:#eee;
+    padding: 10px;
+}
+.services .around{
+    background-color: white;  
+    display:flex ;
+    flex-wrap: wrap;
+   padding: 60px;
+     justify-content: space-evenly;
+     height: 600px;
+}
+div.parent .special-heading {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 60px;
+    
+    
+}
+.services .prag{
+  
+    display:flex ;
+    flex-wrap: wrap;
+    background-color: white;
+     justify-content: space-evenly;
+     font-size: 17px;
+    margin: 15px;
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6;
+    width:500px ; 
+}
+
+section .parent div{
+    
+    background-color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:#777;
+    line-height: 1.6;
+    width:350px ;
+}
+
+h2{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+section p.p1{
+  justify-content:center ;
+}
+section img{
+    border-style: none;
+    width:415px;
+
+    
+}
+section div.content{
+   
+    color:gray;
+    width:400px;
+}
+section .portfolio-1 .portfolio-2 .portfolio-3 .content .pr{
+    max-width: 100%;
+    
+
+}
+section .about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: white;
+    font-size: 16px;
+    color:black;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    padding: 10px;
+    height: 600px;
+}
+div .about .about_p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    font-size:17px;
+    margin-bottom: 5px;
+    line-height: 1.8;
+    width:400px;
+    padding: 20px;
+    text-align: center;
+
+}
+div .about .ab .img_about{
+    max-width: 100%;
+    left:2%;
+    top:20;
+}
+div .about  img {
+    width: 250px;
+
+}
+.img_about img{
+    left:2%;
+    top:20;  
+}
+div .ab{
+    position: relative;
+    left: 50%;
+    top: 30%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 60px;
+}

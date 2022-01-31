@@ -1,0 +1,53 @@
+
+body{
+text-align: center; 
+background-color: rgba(77, 137, 185, 0.89);   
+}
+.p{
+    text-align: center;
+    
+}
+.form{
+    
+    width: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:auto;
+    margin-right: auto;
+   text-align: left;
+   background-color: rgb(233, 232, 232);
+   
+  
+}
+.f_name{
+    width: 390px;
+    height: 20px;
+ 
+}
+.l_name{
+    width: 390px;
+    height: 20px;
+ 
+}
+.e-mail{
+    width: 390px;
+    height: 20px;
+ 
+}
+.password{
+    width: 390px;
+    height: 20px;
+ 
+}
+
+.submit{
+    width: 400px;
+    height: 30px;
+    background-color: rgba(77, 137, 185, 0.89);
+    border-style: none;
+   
+}

@@ -1,0 +1,81 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.parent{
+    position: relative;
+    background-color: #eee;
+    width: 1200px;
+    height: 200px;
+    margin: 20px auto;
+}
+.parent div{
+    background-color: green;
+    color: white;
+    
+}
+.product{
+    background-color: red;
+    color: white;  
+    
+   
+}
+.center-position{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+}
+.circel-100{
+    width: 100px;
+    height:100px ;
+    border-radius: 50%;
+}
+.circel-200{
+    width: 200px;
+    height:200px ;
+    border-radius: 50%;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* mobile
+@media(max-width :767px){
+    
+}
+/* small screen
+@media(min-width :768px) {
+    .parent div{
+        width: calc(50% - 10px);
+    }
+}
+/* meduem screen
+@media(min-width :992px){
+    .parent div{
+        width: calc(25% - 5px);
+    }
+}
+/* larg screen
+@media(min-width :1200px){
+    .parent div{
+        width: calc(12.5% - 5px);
+    }
+}*/
+div{
+    padding: 20px;
+    background-color: #eee;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    margin: 5px;
+    border: 2px solid black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
